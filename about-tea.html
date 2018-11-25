@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>World of Tea | Все о чае</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">      
+      <div class="navigation-bar">
+        <div class="phone-contacts">
+          <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+          </div>
+          <p class="phone-contacts__phone-number">123-44-55</p>
+        </div>
+        <div class="logo-wrapper"><a href="index.html"><img src="images/logo.png" title="Перейти на главную сайта" class="logo"></a></div>
+        <div class="user-control-panel">
+          <a href="#" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i><span class="user-control-panel__counting-items">0</span></a>
+          <a href="#" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></a>
+          <a href="#" title="Поиск товаров" onclick="onOffSearchForm2()"><i class="fas fa-search fa-2x"></i></a>
+          <form class="search-form2">
+            <input type="search" class="search-input" required placeholder="Поиск">
+            <button type="submit" class="sumbit-search-button2"><i class="fas fa-check-square fa-lg"></i></button>
+          </form>
+        </div> 
+      </div> 
+      <ul class="menu">
+       <li><div class="icon-menu-bar-wrapper">        
+        <button class="icon-menu-bar" onclick="onOffSearchForm()" title="Поиск товаров"><i class="fas fa-search fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i></button>
+        <button class="icon-menu-bar" onclick="onOffMenu()"><i class="fas fa-bars fa-2x"></i></button>
+        <form class="search-form">
+          <input type="search" class="search-input" required placeholder="Поиск">
+          <button type="submit" class="sumbit-search-button"><i class="fas fa-check-square fa-2x"></i></button>
+        </form>   
+      </div>
+       </li>
+        <li><a href="index.html" title="Перейти на главную сайта"><i class="fab fa-fort-awesome"></i>Главная</a></li>
+        <li onclick="onOffSubMenu()"><a><i class="fa fa-leaf"></i>Продукция<i class="fas fa-angle-down fa-sm"></i></a>
+          <ul class="menu__submenu">
+            <li><a href="products__tea.html" title="Перейти на страницу с продукцией">Чай</a></li>
+            <li><a href="products__dishes.html" title="Перейти на страницу с продукцией">Посуда</a></li>
+            <li><a href="products__tea-ceremony.html" title="Перейти на страницу с продукцией">Чайная церемония</a></li>
+          </ul>
+        </li>
+        <li><a href="about-tea.html" title="Перейти на страницу &ldquo;Все о чае&rdquo;"><i class="fas fa-coffee"></i>Всё о чае</a></li>
+        <li><a href="about-company.html" title="Перейти на страницу &ldquo;О компании&rdquo;"><i class="fas fa-address-card"></i>О компании</a></li>
+        <li><a href="contacts.html" title="Перейти на страницу контактов"><i class="fas fa-envelope"></i>Контакты</a></li>
+      </ul>     
+    </div>     
+    <div class="content about-tea-content">   
+      <h1 class="about-tea-content__article-title">Все, что нужно знать о чае: полезные свойства качественного чая</h1>
+      <p>
+      Как выбрать чай? Какие полезные свойства у чая и какие сорта чая подходят при повышенном давлении, а какие помогают  худеть? Почему не стоит пить чай с молоком, как англичане? Где покупать  чай, чтобы не проколоться с качеством? Я узнала ответы у экспертов.
+      В строгом смысле слова, чай &mdash; это напиток из листьев чайного куста и только его. Ройбуш, каркаде, мате &mdash; это не чай, поэтому о них речь не пойдет.
+      </p>
+      <h2 class="about-tea-content__subtitle">Как получают чай</h2>
+      <p>
+      Про черный и зеленый знают все. Но есть еще красный чай, белый, желтый, улун, пуэр… Эти удивительные слова пришли к нам из Китая &mdash; страны, которую чайные мастера решительно предпочитают остальным. Мало кто знает также, что чай разных цветов получают порой с одного и того же куста &mdash; вопрос в обработке.
+      </p>
+<!--
+      Подрубаем слайдер      
+-->   
+  <div style="max-width:559px; max-height:366px; padding:0px; margin:0px auto; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'; box-shadow: 0 0 30px rgba(0,0,0,0.5);border: 7px #462512 solid; border-radius: 20px; overflow: hidden;">
+      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg">
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:559px;height:366px;overflow:hidden;">
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__1-1.jpg" title="Поле, где собирают чай" alt="Поле, где собирают чай">              
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__1-2.jpg" title="Поле, где собирают чай" alt="Поле, где собирают чай">
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__1-3.jpg" title="Чайный лист" alt="Чайный лист">                
+               
+            </div>
+               <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__1-4.jpg" title="Поле, где собирают чай" alt="Поле, где собирают чай">
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:25px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->     
+   </div>     
+    <p>
+    Привычный нам чай &mdash; черный байховый. Это чаинки, полученные из почек и верхних листьев. Сначала их завяливают &mdash; чтобы листья стали эластичными, а их сок более вязким. Потом скручивают &mdash; чтобы выделился сок и началась его ферментация, то есть брожение и окисление чайного сока. Этот процесс может идти от 45 минут до нескольких часов. Чем короче ферментация, тем легче будет вкус напитка, тоньше аромат и светлее настой. Чтобы остановить ферментацию, чай быстро высушивают при высокой температуре, оставив влаги не более 5%.
+    </p>
+    <h2 class="about-tea-content__subtitle">Сорта чая</h2>
+    <p>
+    То, что у нас называется черным чаем, в Китае считают красным. А черный для них &mdash; это пуэр, сильно ферментированный чай, который получают, сочетая пропаривание и ферментацию. Это единственный вид чая, которому возраст идет на пользу как вину: меняется к лучшему его вкус и аромат. За 100 г хунаньского пуэра 80-летней выдержки в Москве просят 98 тысяч рублей, или почти миллион за кг.
+    </p>
+    <p>
+    Зеленый чай не завяливают и не ферментируют &mdash; чайные листья только пропаривают горячим паром, подсушивают, затем скручивают и сушат окончательно.
+    </p>
+      
+    <div style="max-width:559px; max-height:366px; padding:0px; margin:0px auto; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'; box-shadow: 0 0 30px rgba(0,0,0,0.5);border: 7px #462512 solid; border-radius: 20px; overflow: hidden;">
+      <div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg">
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:559px;height:366px;overflow:hidden;">
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__2-1.jpg" title="Чай Улун" alt="Чай Улун">              
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__2-2.jpg" title="Чайный сбор" alt="Чайный сбор">
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__2-3.jpg" title="Чай Улун" alt="Чай Улун">
+            </div>
+               <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__2-4.jpg" title="Упакованный чай" alt="Упакованный чай">
+            </div>  
+               <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__2-5.jpg" title="Сорта чая" alt="Сорта чая">
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:25px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+     
+   </div>
+   
+    <p>
+    Еще китайцы придумали уникальный бирюзовый чай &mdash; оолонг, или улун. Он готовится сложнее прочих. После подвяливания чайные листья встряхивают, перераспределяя влагу, прогревают, прожаривают и скручивают. Потом этот цикл повторяют. Южные улуны ближе к зеленым чаям, а северные &mdash; к красным.
+    </p>
+    <p>
+    Также в Китае различают белый неферментированный чай &mdash; его вкус нежнее и мягче зеленого. И желтый чай &mdash; готовится почти как зеленый, но перед сушкой томится в закрытом объеме. Это один из самых дорогих сортов чая, настолько редкий, что одно время его даже запрещали вывозить из страны.
+    </p>
+    <h2 class="about-tea-content__subtitle">Срок годности чая</h2>
+    <p>
+    Зеленые сорта обычно собирают весной, красные &mdash; летом, а большинство улунов &mdash; осенью. &laquo;Зеленый чай &mdash; чем свежей, тем лучше, &mdash; говорит Вадим Шелкопряд, чайный мастер сообщества Yogastan. &mdash; Красный и улуны хороши два-три года, а пуэры могут быть и 30-летними&raquo;.
+    </p>    
+      
+     <div style="max-width:559px; max-height:366px; padding:0px; margin:0px auto; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'; box-shadow: 0 0 30px rgba(0,0,0,0.5);border: 7px #462512 solid; border-radius: 20px; overflow: hidden;">
+      <div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg">
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:559px;height:366px;overflow:hidden;">
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__3-1.jpg" title="Процесс сбора чая" alt="Процесс сбора чая">              
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__3-2.jpg" title="Процесс сбора чая" alt="Процесс сбора чая">
+            </div>
+            <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__3-3.jpg" title="Чайный лист" alt="Чайный лист"> 
+            </div>
+               <div data-p="225.00">
+                <img data-u="image" src="images/about-tea__3-4.jpg" title="Процесс сбора чая" alt="Процесс сбора чая">
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:25px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->     
+   </div>   
+      <p>
+      Срок годности устанавливается с момента фасовки, а не выработки. Но не стоит опасаться, что чай годами лежит на складах, прежде чем попасть в пачку. &laquo;Долго хранить чай невыгодно, его закупают на сезон и тут же фасуют, &mdash; рассказывает Лиана Купалба, начальник лаборатории Московской чайной фабрики. &mdash; К тому же качественно выработанные чаи могут храниться гораздо дольше указанного срока, не теряя вкуса и аромата&raquo;.
+      </p>
+      <h2 class="about-tea-content__subtitle">Качество чая</h2>
+      <p>
+      Целый лист или резаный, мелкий или крупный &mdash; это не показатель качества чая. &laquo;Цейлонский высокогорный чай &mdash; мелкий и слабо скрученный, но он изумительно ароматен, &mdash; приводит пример Лиана Купалба. &mdash; Кенийский чай, гранулированный из мелких листьев, вкуснее их же крупнолистовых чаев&raquo;. Цена, к сожалению, тоже далеко не всегда соответствует качеству.
+      </p>
+      <p>
+      Титестеры советуют ориентироваться по трем главным признакам. Чаинки в пачке должны быть однородными, скрученными. Чаинки после заваривания &mdash; мягкими и одного цвета. Настой &mdash; прозрачным.
+      </p>
+      <p>
+      А вот цветочные лепестки и кусочки фруктов &mdash; повод насторожиться. &laquo;Для ароматизации обычно берут чайное сырье невысокого качества, &mdash; предупреждает Вадим Шелкопряд. &mdash; Я лично против любых добавок. Вкус хорошего чая не нуждается в улучшении&raquo;.
+      </p>
+      <h2 class="about-tea-content__subtitle">Чайная азбука</h2>
+      <p>
+      Чай лучше покупать на развес в специализированных магазинах, где хозяева ручаются за его качество. Но можно и в супермаркетах, если запомнить, что означают несколько аббревиатур на импортном чае и внимательно рассмотреть упаковку. ОР &mdash; молодые цельные листья. B (broken) &mdash; указание на то, что лист резаный (на качество это не влияет). Обозначения немного отличаются для индийского и цейлонского чаев. ВОР &mdash; резаный индийский чай и крупный цейлонский. Тот же крупный из Индии &mdash; просто ОР.
+      </p>
+      <p>
+      Буквы Т (типсовый), G (golden) и F (flowery) в начале аббревиатуры ставят, если в чай добавлены почки. Это несомненные признаки высокого сорта. Но F в конце аббревиатуры означает мелкую фракцию чайного листа (fannings) &mdash; то, что идет в чайные пакетики.
+      </p>
+      <p>
+      На цейлонском чае должна быть печать со львом и пометка Packed in Sri-Lanka, а на индийском &mdash; рисунок девушки с корзиной чая и название фирмы-производителя. На пачке китайского чая должно быть только &laquo;Национальная экспортно-импортная компания чая&raquo;.
+      </p>
+      <h2 class="about-tea-content__subtitle">Свойства чая</h2>
+      <p>
+      Каких только чудодейственных свойств не приписывают чаю: он и зубы от кариеса защищает, и сердце укрепляет, и способствует похудению.
+      </p>
+      <p>
+      Диетолог Екатерина Белова, глав врач Центра персональной диетологии &laquo;Палитра Питания&raquo;, считает, что чай полезен, но и не безобиден. &laquo;В чае много антиоксидантов, поэтому мы, безусловно, рекомендуем его, &mdash; говорит она. &mdash; Но не больше 3 чашек в день. Как и кофе, он содержит кофеин, который тонизирует и обезвоживает организм. В жару минералка помогает лучше&raquo;.
+      </p>
+      <p>
+      Я часто использую чай при простуде, головной боли, но доктор Белова объяснила мне, что чай приносит лишь временное облегчение: &laquo;С лимоном при простуде он полезен не больше чем любое кислое теплое питье. При головной боли он выручит, если она вызвана низким давлением (см. &laquo;Алексей Василенко о борьбе с гипотонией&raquo;), а дубильные вещества действительно оказывают вяжущее и антибактериальное действие. Но это лишь подручное средство, которое не заменяет лечения&raquo;.
+      </p>
+      <p>
+      На чай как средство похудения смотрят по-разному. &laquo;Зеленый чай улучшает переваривание и ускоряет метаболизм, а черный подавляет аппетит, увеличивает двигательную активность и сжигает калории&raquo;, &mdash; считает Вадим Шелкопряд. &laquo;Чай ускоряет обмен веществ на миллипроценты, &mdash; возражает Екатерина Белова. &mdash; Невозможно похудеть без диеты, попивая чаек и не меняя привычного питания. Любые обещания похудения на пачке с чаем &mdash; это рекламная уловка&raquo;.
+      </p>
+      <h2 class="about-tea-content__subtitle">Чай с молоком</h2>
+      <p>
+      Неожиданное открытие сделали немецкие кардиологи из медицинского центра при Университете Берлина. С помощью ультразвука они зафиксировали: черный чай расширяет сосуды и улучшает кровообращение, но если добавить в него молоко &mdash; эффект исчезает.
+      </p>
+      <p>
+      Скорее всего, дело в казеине: этот молочный белок подавляет действие катехина &mdash; вещества, которое содержится в чае и расширяет сосуды. Если чай без молока для вас не чай, исследователи советуют заменить коровье молоко миндальным или соевым &mdash; в нем казеина нет.
+      </p> 
+    </div>    
+    <div class="footer">    
+      <div class="footer__requisites">
+        <h3>Реквизиты</h3>
+        <p>
+          ЧТУП &ldquo;МирЧая&rdquo;. 220000, Республика Беларусь, г. Минск, просп. Дзержинского, д. 5, оф. 65.
+          Свидетельство о регистрации №1234567 от 12.03.2014 г.
+          Место регистрации &mdash; Администрация Октябрьского района г. Минска
+          УНП 12345678
+          Интернет-магазин world-of-tea.by внесён в торговый реестр Республики Беларусь 12 марта 2018 г. под номером: 123456
+        </p>
+        <p>&copy;Copyright 2018. Все права защищены.</p>
+      </div>
+      <div class="footer__work-time">
+        <h3>Режим работы</h3>
+        <p>
+        Обработка заказов с 9.00 до 18.00 без выходных. Доставка с 9.00 до 21.00 в будние дни.
+        </p>
+      </div> 
+      <div class="footer__folowing"> 
+        <h3>Следуйте за нами</h3>
+        <a href="#" title="Мы в Вконтакте"><i class="fab fa-vk fa-lg"></i></a>
+        <a href="#" title="Мы в Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" title="Мы в Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" title="Мы в Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+        <a href="#" title="Мы в Youtube"> <i class="fab fa-youtube"></i></a>
+      </div>       
+      <div class="footer__payments">
+        <h3>Способы оплаты</h3>
+        <span class="sprites footer__payment-method1"></span>
+        <span class="sprites footer__payment-method2"></span>
+        <span class="sprites footer__payment-method3"></span>
+        <span class="sprites footer__payment-method4"></span>
+        <span class="sprites footer__payment-method5"></span>
+      </div>      
+      <div class="phone-contacts">
+        <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+        </div>
+        <p class="phone-contacts__phone-number">123-44-55</p>
+      </div>  
+      <a href="#" class="to-top"><i class="fas fa-angle-up fa-4x"></i></a>
+    </div>     
+  </div>
+  <div class="login-modal-window-wrapper">
+    <div class="login-modal-window">
+      <button class="login-modal-window__close-button" onclick="offLoginModalWindow()">x</button>
+      <h2 class="login-modal-window__title">Авторизуйтесь</h2>   
+      <form class="login-form">
+        <div class="login-form__user-data">       
+          <input class="login-form__input login-form__login" id="user-name" type="text" name="user-name" placeholder="Логин" required>  
+          <input class="login-form__input login-form__password" id="user-password" type="password" name="user-password" placeholder="Пароль" required> 
+        </div>
+        <p class="login-form__help">
+          Забыли логин или пароль? <a href="#">Напомним!</a>
+        </p>
+        <button class="login-form__submit-button">
+          &rarr;
+        </button>
+      </form>    
+    </div>
+  </div>
+<script>
+  function onOffSearchForm() {
+    var searchForm = document.querySelector('.search-form');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  }
+  function onOffSearchForm2() {
+    var searchForm = document.querySelector('.search-form2');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  } 
+  var modalWindow;
+  var background;
+  function onLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'block';
+    background = document.querySelector('.main-container');
+    background.style.filter = "blur(10px)";
+  }  
+  function offLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'none';
+    background = document.querySelector('.main-container');
+    background.style.filter = "none";
+  } 
+  var menu;
+  var subMenu;
+  function onOffMenu() {      
+    menu = document.querySelector('.menu');
+    if(menu.classList.contains('menu-extra-size')) {
+      menu.classList.remove('menu-extra-size');
+    }
+    if(menu.classList.contains('menu-standart-size')) {
+      menu.classList.remove('menu-standart-size');
+    }
+    if(subMenu && subMenu.classList.contains('sub-menu-show')) {
+      subMenu.classList.remove('sub-menu-show');
+    }      
+    if(menu.classList.contains('menu-show')) {
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
+    } else if (menu.classList.contains('menu-hide')) {
+       menu.classList.remove('menu-hide');
+      menu.classList.add('menu-show');
+    } else {
+      menu.classList.add('menu-show');
+    }   
+  }
+  function onOffSubMenu() {
+    subMenu = document.querySelector('.menu__submenu');     
+    if(subMenu.classList.contains('sub-menu-show')) {        
+      subMenu.classList.remove('sub-menu-show');
+      subMenu.classList.add('sub-menu-hide');
+      if (menu) {
+        menu.classList.remove('menu-extra-size');
+        menu.classList.add('menu-standart-size');  
+      }    
+    } else if (subMenu.classList.contains('sub-menu-hide')) {
+      subMenu.classList.remove('sub-menu-hide');
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+        menu.classList.add('menu-extra-size');
+      menu.classList.remove('menu-standart-size');  
+      }      
+    } else {
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+      menu.classList.add('menu-extra-size');
+      }
+    }   
+  }
+</script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        var jssor_1_SlideoTransitions = [
+          [{b:-1,d:1,o:-0.7}],
+          [{b:900,d:2000,x:-379,e:{x:7}}],
+          [{b:900,d:2000,x:-379,e:{x:7}}],
+          [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+        ];
+
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $CaptionSliderOptions: {
+            $Class: $JssorCaptionSlideo$,
+            $Transitions: jssor_1_SlideoTransitions
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+        var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+        var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 3000;
+
+        function ScaleSlider1() {
+            var containerElement = jssor_1_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_1_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider1, 30);
+            }
+        }
+
+        ScaleSlider1();
+
+        $(window).bind("load", ScaleSlider1);
+        $(window).bind("resize", ScaleSlider1);
+        $(window).bind("orientationchange", ScaleSlider1);
+        /*#endregion responsive code end*/
+
+      function ScaleSlider2() {
+            var containerElement = jssor_2_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_2_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider2, 30);
+            }
+        }
+
+        ScaleSlider2();
+
+        $(window).bind("load", ScaleSlider2);
+        $(window).bind("resize", ScaleSlider2);
+        $(window).bind("orientationchange", ScaleSlider2);
+        /*#endregion responsive code end*/
+
+      function ScaleSlider3() {
+            var containerElement = jssor_3_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_3_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider3, 30);
+            }
+        }
+
+        ScaleSlider3();
+        $(window).bind("load", ScaleSlider3);
+        $(window).bind("resize", ScaleSlider3);
+        $(window).bind("orientationchange", ScaleSlider3);
+        /*#endregion responsive code end*/
+    });
+</script> 
+<script>
+  jQuery(function($) {
+    var $navMenu = $('.menu');
+    var navMenuTop = $navMenu.offset().top;
+    var $toTop   = $('.to-top');
+    var body     = $('html, body');
+
+    $(window).scroll(function(){
+
+        if($(window).scrollTop()>navMenuTop){
+            $navMenu.addClass('fixed');
+        }
+        else if ($(window).scrollTop()<navMenuTop){
+            $navMenu.removeClass('fixed');
+        }
+        if($(window).scrollTop()>1000){
+            $toTop.fadeIn(800);
+        }
+        else if ($(window).scrollTop()<1000){
+            $toTop.hide();
+        }
+    });
+    $toTop.on('click', function(event) {
+        event.preventDefault();
+        body.animate({scrollTop:0}, 1200);
+    });     
+});
+</script>
+</body>
+</html>
+<!--<i class="fas fa-bars fa-2x"></i>-->

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World of Tea | О нашей компании</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">      
+      <div class="navigation-bar">
+        <div class="phone-contacts">
+          <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+          </div>
+          <p class="phone-contacts__phone-number">123-44-55</p>
+        </div>
+        <div class="logo-wrapper"><a href="index.html"><img src="images/logo.png" title="Перейти на главную сайта" class="logo"></a></div>
+        <div class="user-control-panel">
+          <a href="#" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i><span class="user-control-panel__counting-items">0</span></a>
+          <a href="#" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></a>
+          <a href="#" title="Поиск товаров" onclick="onOffSearchForm2()"><i class="fas fa-search fa-2x"></i></a>
+          <form class="search-form2">
+            <input type="search" class="search-input" required placeholder="Поиск">
+            <button type="submit" class="sumbit-search-button2"><i class="fas fa-check-square fa-lg"></i></button>
+          </form>
+        </div> 
+      </div> 
+      <ul class="menu">
+       <li><div class="icon-menu-bar-wrapper">        
+        <button class="icon-menu-bar" onclick="onOffSearchForm()" title="Поиск товаров"><i class="fas fa-search fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i></button>
+        <button class="icon-menu-bar" onclick="onOffMenu()"><i class="fas fa-bars fa-2x"></i></button>
+        <form class="search-form">
+          <input type="search" class="search-input" required placeholder="Поиск">
+          <button type="submit" class="sumbit-search-button"><i class="fas fa-check-square fa-2x"></i></button>
+        </form>   
+      </div>
+       </li>
+        <li><a href="index.html" title="Перейти на главную сайта"><i class="fab fa-fort-awesome"></i>Главная</a></li>
+        <li onclick="onOffSubMenu()"><a><i class="fa fa-leaf"></i>Продукция<i class="fas fa-angle-down fa-sm"></i></a>
+          <ul class="menu__submenu">
+            <li><a href="products__tea.html" title="Перейти на страницу с продукцией">Чай</a></li>
+            <li><a href="products__dishes.html" title="Перейти на страницу с продукцией">Посуда</a></li>
+            <li><a href="products__tea-ceremony.html" title="Перейти на страницу с продукцией">Чайная церемония</a></li>
+          </ul>
+        </li>
+        <li><a href="about-tea.html" title="Перейти на страницу &ldquo;Все о чае&rdquo;"><i class="fas fa-coffee"></i>Всё о чае</a></li>
+        <li><a href="about-company.html" title="Перейти на страницу &ldquo;О компании&rdquo;"><i class="fas fa-address-card"></i>О компании</a></li>
+        <li><a href="contacts.html" title="Перейти на страницу контактов"><i class="fas fa-envelope"></i>Контакты</a></li>
+      </ul>     
+    </div> 
+    <div class="content about-company__content">   
+      <h1 class="about-company__content-header">О компании</h1>
+      <div class="content-img-wrapper1">
+        <img src="images/teacups.png" class="content-img1" title="Наш чай &mdash; самый вкусный чай!" alt="Чайные кружки">
+      </div>      
+      <p>
+      <span>World of Tea</span> &mdash; маленькая компания, открытая в 2018 году энтузиастами и просто любителями хорошего чая :).       
+      </p>
+      <p>
+        Общеизвестно, что чай &mdash; это не только самый популярные в мире напитки, но и неизменный спутник жизни современного человека. Мы понимаем, что выбор надежного спутника, пусть это даже пакетик чая, задача не из простых. Особенно если не хватает времени пройтись по магазинам. Мы создали интернет-магазин <span>World of Tea</span>, чтобы Вы, не выходя из дома, могли совершить путешествие в мир лучшего чая и самого ароматного кофе.
+      </p>     
+      <div class="clearfix">
+      <div class="content-img-wrapper2">
+        <img src="images/tea-with-love.png" class="content-img2" title="Наш чай &mdash; с любовью!" alt="Чай с любовью">
+      </div>      
+      <p>
+        Желаете заварить белый чай по императорскому рецепту, купить кофе прямиком из Бразилии, подыскиваете оригинальный подарок &mdash; <span>World of Tea</span> всегда готов предложить решение, которое отвечает вашему вкусу. Ассортимент, подобранный с любовью, удобный поиск по сайту, внимание к мелочам и, главное, демократичная ценовая политика &mdash; залог того, что каждый посетитель нашего интернет-магазина оценит возможность купить чай и кофе с любого конца света, не тратя ни одного лишнего мгновения. Вы можете быть уверены в качестве нашего чая: среди чаев представлены самые востребованные и вкусные купажи.
+      </p>     
+      <p>
+       
+        Мы проводим специальные акции и предлагаем скидки для наших клиентов.  При заказе от 50 рублей вы получаете скидку 5%, при заказе от 100 рублей – скидка 10%, а при регулярных заказах – дополнительная скидка 3%. Доставка по Минску &mdash; 5 рублей, а для заказов свыше 20 рублей &mdash; бесплатно!
+      </p>  
+       <p>  
+        Приобретая чай в нашем интернет-магазине, вы подарите себе не только вкусный напиток, но и лучшие минуты каждого дня. Вы можете быть уверены, что купленный вами чай наполнен любовью. Погрузитесь в мир тонких вкусов и волшебных ароматов вместе с <span>World of Tea</span>!
+      </p>
+      </div>      
+      <p>
+        Предлагаем Вам ознакомиться с нашим магазинчиком :)
+      </p> 
+      <div class="galary">
+        <a href="images/about-company-1.jpg" class="flipLightBox">
+        <img src="images/about-company-1.jpg" width="auto" height="290" alt="Чайный набор" title="Чайный набор">
+        <span>Чайный набор</span>
+        </a>
+        <a href="images/about-company-2.jpg" class="flipLightBox">
+        <img src="images/about-company-2.jpg" width="auto" height="290" alt="Чайный сбор" title="Чайный сбор">
+        <span>Чайный сбор</span>
+        </a>
+        <a href="images/about-company-3.jpg" class="flipLightBox">
+        <img src="images/about-company-3.jpg" width="auto" height="290" alt="Новый чабань" title="Новый чабань">
+        <span>Новый чабань</span>
+        </a>
+        <a href="images/about-company-4.jpg" class="flipLightBox">
+        <img src="images/about-company-4.jpg" width="auto" height="290" alt="Работа кипит!" title="Работа кипит!">
+        <span>Работа кипит!</span>
+        </a>        
+        <a href="images/about-company-5.jpg" class="flipLightBox">
+        <img src="images/about-company-5.jpg" width="auto" height="290" alt="Женьшень улун" title="Женьшень улун">
+        <span>Женьшень улун</span>
+        </a>        
+        <a href="images/about-company-6.jpg" class="flipLightBox">
+        <img src="images/about-company-6.jpg" width="auto" height="290" alt="Наша чайная лавка" title="Наша чайная лавка">
+        <span>Наша чайная лавка</span>
+        </a>        
+        <a href="images/about-company-7.jpg" class="flipLightBox">
+        <img src="images/about-company-7.jpg" width="auto" height="290" alt="Наш новый работник &mdash; Сирожа :)" title="Наш новый работник &mdash; Сирожа :)">
+        <span>Наш новый работник &mdash; Сирожа :)</span>
+        </a>        
+        <a href="images/about-company-8.jpg" class="flipLightBox">
+        <img src="images/about-company-8.jpg" width="auto" height="290" alt="Чженшашь Сяочжун" title="Чженшашь Сяочжун">
+        <span>Чженшашь Сяочжун</span>
+        </a>        
+        <a href="images/about-company-9.jpg" class="flipLightBox">
+        <img src="images/about-company-9.jpg" width="auto" height="290" alt="Чайная лавка. Marry Christmas" title="Чайная лавка. Marry Christmas">
+        <span>Чайная лавка. Marry Christmas</span>
+        </a>        
+        <a href="images/about-company-10.jpg" class="flipLightBox">
+        <img src="images/about-company-10.jpg" width="auto" height="290" alt="Отличный чайный напиток" title="Отличный чайный напиток">
+        <span>Отличный чайный напиток</span>
+        </a>        
+        <a href="images/about-company-11.jpg" class="flipLightBox">
+        <img src="images/about-company-11.jpg" width="auto" height="290" alt="Мы всегда вам рады!" title="Мы всегда вам рады!">
+        <span>Мы всегда вам рады!</span>
+        </a>        
+        <a href="images/about-company-12.jpg" class="flipLightBox">
+        <img src="images/about-company-12.jpg" width="auto" height="290" alt="Молочный улун" title="Молочный улун">
+        <span>Молочный улун</span>
+        </a>        
+        <a href="images/about-company-13.jpg" class="flipLightBox">
+        <img src="images/about-company-13.jpg" width="auto" height="290" alt="Чайнай лавка. Богатый выбор" title="Чайнай лавка. Богатый выбор">
+        <span>Чайнай лавка. Богатый выбор</span>
+        </a>        
+        <a href="images/about-company-14.jpg" class="flipLightBox">
+        <img src="images/about-company-14.jpg" width="auto" height="290" alt="Чай с натуральной земляникой" title="Чай с натуральной земляникой">
+        <span>Чай с натуральной земляникой</span>
+        </a>      
+      </div> 
+    </div>    
+   <div class="footer">    
+      <div class="footer__requisites">
+        <h3>Реквизиты</h3>
+        <p>
+          ЧТУП &ldquo;МирЧая&rdquo;. 220000, Республика Беларусь, г. Минск, просп. Дзержинского, д. 5, оф. 65.
+          Свидетельство о регистрации №1234567 от 12.03.2014 г.
+          Место регистрации &mdash; Администрация Октябрьского района г. Минска
+          УНП 12345678
+          Интернет-магазин world-of-tea.by внесён в торговый реестр Республики Беларусь 12 марта 2018 г. под номером: 123456
+        </p>
+        <p>&copy;Copyright 2018. Все права защищены.</p>
+      </div>
+      <div class="footer__work-time">
+        <h3>Режим работы</h3>
+        <p>
+        Обработка заказов с 9.00 до 18.00 без выходных. Доставка с 9.00 до 21.00 в будние дни.
+        </p>
+      </div> 
+      <div class="footer__folowing"> 
+        <h3>Следуйте за нами</h3>
+        <a href="#" title="Мы в Вконтакте"><i class="fab fa-vk fa-lg"></i></a>
+        <a href="#" title="Мы в Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" title="Мы в Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" title="Мы в Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+        <a href="#" title="Мы в Youtube"> <i class="fab fa-youtube"></i></a>
+      </div>       
+      <div class="footer__payments">
+        <h3>Способы оплаты</h3>
+        <span class="sprites footer__payment-method1"></span>
+        <span class="sprites footer__payment-method2"></span>
+        <span class="sprites footer__payment-method3"></span>
+        <span class="sprites footer__payment-method4"></span>
+        <span class="sprites footer__payment-method5"></span>
+      </div>      
+      <div class="phone-contacts">
+        <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+        </div>
+        <p class="phone-contacts__phone-number">123-44-55</p>
+      </div>  
+      <a href="#" class="to-top"><i class="fas fa-angle-up fa-4x"></i></a>
+    </div>     
+  </div>
+  <div class="login-modal-window-wrapper">
+    <div class="login-modal-window">
+      <button class="login-modal-window__close-button" onclick="offLoginModalWindow()">x</button>
+      <h2 class="login-modal-window__title">Авторизуйтесь</h2>   
+      <form class="login-form">
+        <div class="login-form__user-data">       
+          <input class="login-form__input login-form__login" id="user-name" type="text" name="user-name" placeholder="Логин" required>  
+          <input class="login-form__input login-form__password" id="user-password" type="password" name="user-password" placeholder="Пароль" required> 
+        </div>
+        <p class="login-form__help">
+          Забыли логин или пароль? <a href="#">Напомним!</a>
+        </p>
+        <button class="login-form__submit-button">
+          &rarr;
+        </button>
+      </form>    
+    </div>
+  </div>
+<script>
+  function onOffSearchForm() {
+    var searchForm = document.querySelector('.search-form');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  }
+  function onOffSearchForm2() {
+    var searchForm = document.querySelector('.search-form2');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  } 
+  var modalWindow;
+  var background;
+  function onLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'block';
+    background = document.querySelector('.main-container');
+    background.style.filter = "blur(10px)";
+  }  
+  function offLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'none';
+    background = document.querySelector('.main-container');
+    background.style.filter = "none";
+  } 
+  var menu;
+  var subMenu;
+  function onOffMenu() {      
+    menu = document.querySelector('.menu');
+    if(menu.classList.contains('menu-extra-size')) {
+      menu.classList.remove('menu-extra-size');
+    }
+    if(menu.classList.contains('menu-standart-size')) {
+      menu.classList.remove('menu-standart-size');
+    }
+    if(subMenu && subMenu.classList.contains('sub-menu-show')) {
+      subMenu.classList.remove('sub-menu-show');
+    }      
+    if(menu.classList.contains('menu-show')) {
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
+    } else if (menu.classList.contains('menu-hide')) {
+       menu.classList.remove('menu-hide');
+      menu.classList.add('menu-show');
+    } else {
+      menu.classList.add('menu-show');
+    }   
+  }
+  function onOffSubMenu() {
+    subMenu = document.querySelector('.menu__submenu');     
+    if(subMenu.classList.contains('sub-menu-show')) {        
+      subMenu.classList.remove('sub-menu-show');
+      subMenu.classList.add('sub-menu-hide');
+      if (menu) {
+        menu.classList.remove('menu-extra-size');
+        menu.classList.add('menu-standart-size');  
+      }    
+    } else if (subMenu.classList.contains('sub-menu-hide')) {
+      subMenu.classList.remove('sub-menu-hide');
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+        menu.classList.add('menu-extra-size');
+      menu.classList.remove('menu-standart-size');  
+      }      
+    } else {
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+      menu.classList.add('menu-extra-size');
+      }
+    }   
+  }
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+<script type="text/javascript">$('body').flipLightBox()</script> 
+<script>
+    jQuery(function($) {
+        var $navMenu = $('.menu');
+        var navMenuTop = $navMenu.offset().top;
+        var $toTop   = $('.to-top');
+        var body     = $('html, body');
+
+        $(window).scroll(function(){
+
+            if($(window).scrollTop()>navMenuTop){
+                $navMenu.addClass('fixed');
+            }
+            else if ($(window).scrollTop()<navMenuTop){
+                $navMenu.removeClass('fixed');
+            }
+            if($(window).scrollTop()>1000){
+                $toTop.fadeIn(800);
+            }
+            else if ($(window).scrollTop()<1000){
+                $toTop.hide();
+            }
+        });
+        $toTop.on('click', function(event) {
+            event.preventDefault();
+            body.animate({scrollTop:0}, 1200);
+        });     
+    });
+</script>
+</body>
+</html>
+<!--<i class="fas fa-bars fa-2x"></i>-->

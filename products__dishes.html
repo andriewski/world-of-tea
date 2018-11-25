@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World of Tea | Посуда</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"> 
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">      
+      <div class="navigation-bar">
+        <div class="phone-contacts">
+          <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+          </div>
+          <p class="phone-contacts__phone-number">123-44-55</p>
+        </div>
+        <div class="logo-wrapper"><a href="index.html"><img src="images/logo.png" title="Перейти на главную сайта" class="logo"></a></div>
+        <div class="user-control-panel">
+          <a href="#" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i><span class="user-control-panel__counting-items">0</span></a>
+          <a href="#" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></a>
+          <a href="#" title="Поиск товаров" onclick="onOffSearchForm2()"><i class="fas fa-search fa-2x"></i></a>
+          <form class="search-form2">
+            <input type="search" class="search-input" required placeholder="Поиск">
+            <button type="submit" class="sumbit-search-button2"><i class="fas fa-check-square fa-lg"></i></button>
+          </form>
+        </div> 
+      </div> 
+      <ul class="menu">
+       <li><div class="icon-menu-bar-wrapper">        
+        <button class="icon-menu-bar" onclick="onOffSearchForm()" title="Поиск товаров"><i class="fas fa-search fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i></button>
+        <button class="icon-menu-bar" onclick="onOffMenu()"><i class="fas fa-bars fa-2x"></i></button>
+        <form class="search-form">
+          <input type="search" class="search-input" required placeholder="Поиск">
+          <button type="submit" class="sumbit-search-button"><i class="fas fa-check-square fa-2x"></i></button>
+        </form>   
+      </div>
+       </li>
+        <li><a href="index.html" title="Перейти на главную сайта"><i class="fab fa-fort-awesome"></i>Главная</a></li>
+        <li onclick="onOffSubMenu()"><a><i class="fa fa-leaf"></i>Продукция<i class="fas fa-angle-down fa-sm"></i></a>
+          <ul class="menu__submenu">
+            <li><a href="products__tea.html" title="Перейти на страницу с продукцией">Чай</a></li>
+            <li><a href="products__dishes.html" title="Перейти на страницу с продукцией">Посуда</a></li>
+            <li><a href="products__tea-ceremony.html" title="Перейти на страницу с продукцией">Чайная церемония</a></li>
+          </ul>
+        </li>
+        <li><a href="about-tea.html" title="Перейти на страницу &ldquo;Все о чае&rdquo;"><i class="fas fa-coffee"></i>Всё о чае</a></li>
+        <li><a href="about-company.html" title="Перейти на страницу &ldquo;О компании&rdquo;"><i class="fas fa-address-card"></i>О компании</a></li>
+        <li><a href="contacts.html" title="Перейти на страницу контактов"><i class="fas fa-envelope"></i>Контакты</a></li>
+      </ul>     
+    </div> 
+    <div class="content">
+      <div class="products-menu-wraper">
+        <h3 class="products-menu-title">Каталог товаров</h3>
+        <ul class="products-menu">   
+          <li><a>ЧАЙ<i class="fas fa-angle-down fa-sm"></i></a>
+            <ul class="products-sub-menu">
+              <li><a href="products__tea.html">Зеленый</a></li>
+              <li><a href="products__tea.html">Черный</a></li>
+              <li><a href="products__tea.html">Пуэр</a></li>
+            </ul>
+          </li>
+          <li><a>ПОСУДА<i class="fas fa-angle-down fa-sm"></i></a>
+            <ul class="products-sub-menu">
+              <li><a href="products__dishes.html">Стеклянные чайники</a></li>
+              <li><a href="products__dishes.html">Глиняные чайники</a></li>
+              <li><a href="products__dishes.html">Чашки, кружки, пиалы</a></li>
+            </ul>
+          </li>
+          <li><a>ЧАЙНАЯ ЦЕРЕМОНИЯ<i class="fas fa-angle-down fa-sm"></i></a>
+            <ul class="products-sub-menu">
+              <li><a href="products__tea-ceremony.html">Аксессуары</a></li>
+              <li><a href="products__tea-ceremony.html">Чабань (чайные доски)</a></li>
+              <li><a href="products__tea-ceremony.html">Чайные фигурки</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="products clearfix">                   
+        <div class="products__item" id="item0">         
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes1.jpg" title="Перейти на страницу товара" alt="&ldquo;Смородина малая&rdquo;, 600 мл"></a>
+          </div>
+          <div class="products__item-section">Стеклянные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Смородина малая&rdquo;, 600 мл</a></div>
+          <div class="products__item-price">
+            <span>23.65</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Хороший, удобный чайник из жаропрочного стекла, который добавит эстетики в любое чаепитие. Одна из самых популярных моделей в нашем интернет-магазине. Имеет оптимальный объем 600 мл и заварочную колбу. 
+            </div>
+          </div>   
+        </div>                    
+        <div class="products__item discount-frame" id="item1">
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes2.jpg" title="Перейти на страницу товара" alt="&ldquo;Георгин&rdquo;, 670 мл"></a>
+          </div>
+          <div class="products__item-section">Стеклянные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Георгин&rdquo;, 670 мл</a></div>
+         <div class="products__item-price">
+            <span>56.34</span> руб <span class="item-old-price"><span>62.60</span> руб</span>
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">
+             Качественный, проверенный временем, заварочный чайник из жаропрочного стекла с пружинкой-фильтром в носике. Объем 670 мл.  
+            </div>
+          </div>   
+        </div> 
+        <div class="products__item"  id="item2">
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes3.jpg" title="Перейти на страницу товара" alt="&ldquo;Душистая кувшинка&rdquo;, 1000 мл"></a>
+          </div>
+          <div class="products__item-section">Стеклянные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Душистая кувшинка&rdquo;, 1000 мл</a></div>
+          <div class="products__item-price">
+            <span>86.50</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+             Чайник заварочный стеклянный &ldquo;Душистая кувшинка&rdquo; 1000 мл с бамбуковой ручкой, пробковой подставкой и фильтром в носике. 
+            </div>
+          </div>   
+        </div> 
+        <div class="products__item" id="item3" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes5.jpg" title="Перейти на страницу товара" alt="&ldquo;Лодочка&rdquo;, 250 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Лодочка&rdquo;, 250 мл</a></div>
+          <div class="products__item-price">
+            <span>39.65</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+             Аккуратный глиняный чайник небольших размеров, изготовленный вручную. Подходит для компании из 2-3 человек.        
+            </div>
+          </div>   
+        </div>  
+        <div class="products__item" id="item4" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes4.jpg" title="Перейти на страницу товара" alt="&ldquo;Бамбук&rdquo;, 350 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Бамбук&rdquo;, 350 мл</a></div>
+          <div class="products__item-price">
+            <span>39.95</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Заварочный чайник для компании 2-3 человека. <br>
+              D горлышка: 5 см.<br>
+              D широкой части: 11,5 см.<br>
+              D дна: 7 см.<br>
+              Высота: 9 см.
+            </div>
+          </div>   
+        </div> 
+        <div class="products__item discount-frame" id="item5" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes6.jpg" title="Перейти на страницу товара" alt="&ldquo;Поющий лес&rdquo;, 350 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Поющий лес&rdquo;, 350 мл</a></div>
+          <div class="products__item-price">  
+            <span>33.57</span> руб <span class="item-old-price"><span>37.30</span> руб</span>
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Глиняный чайник ручной работы, выполнен в традиционном китайском стиле.<br>
+              D горлышка: 5,5 см.<br>
+              D широкой части: 10,5 см.<br>
+              D дна: 7 см.<br>
+              Высота: 9 см.
+            </div>
+          </div>   
+        </div>  
+        <div class="products__item" id="item6" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes7.jpg" title="Перейти на страницу товара" alt="&ldquo;Чайный домик&rdquo;, 350 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Чайный домик&rdquo;, 350 мл</a></div>
+          <div class="products__item-price">  
+            <span>37.35</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Китайский заварочный глиняный чайник ручной работы. Классическая форма.<br>
+              D горлышка: 5 см.<br>
+              D широкой части: 11,5 см.<br>
+              D дна: 7 см.<br>
+              Высота: 9 см.       
+            </div>
+          </div>   
+        </div>              
+        <div class="products__item" id="item7" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes8.jpg" title="Перейти на страницу товара" alt="&ldquo;Шеньши&rdquo;, 200 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Шеньши&rdquo;, 200 мл</a></div>
+          <div class="products__item-price">
+            <span>37.15</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Глиняный заварочный чайник компактных размеров. Изготовлен вручную.<br>
+              D горлышка: 5,5 см.<br>
+              D широкой части: 10 см.<br>
+              D дна: 10 см.<br>
+              Высота: 9 см.
+            </div>
+          </div>   
+        </div> 
+        <div class="products__item" id="item8" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes9.jpg" title="Перейти на страницу товара" alt="&ldquo;Каллиграфия-4&rdquo;, 350 мл"></a>
+          </div>
+          <div class="products__item-section">Глиняные чайники</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Каллиграфия-4&rdquo;, 350 мл</a></div>
+          <div class="products__item-price">
+            <span>45.00</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Китайский глиняный чайник, выполненный вручную в классическом стиле. Рекомендуется для заваривания &ldquo;чистых&rdquo; чаев, без ароматизаторов.<br>
+              D горлышка: 5,5 см.<br>
+              D широкой части: 7 см.<br>
+              D дна: 11,5 см.<br>
+              Высота: 9 см.
+            </div>
+          </div>   
+        </div> 
+        <div class="products__item discount-frame" id="item9" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes10.jpg" title="Перейти на страницу товара" alt="Пиала &ldquo;Колотый лед&rdquo; (малахит), 55 мл"></a>
+          </div>
+          <div class="products__item-section">Чашки, кружки, пиалы</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Пиала &ldquo;Колотый лед&rdquo; (малахит),<br> 55 мл</a></div>
+          <div class="products__item-price"> 
+            <span>2.79</span> руб <span class="item-old-price"><span>3.10</span> руб</span>
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Пиала из обливной керамики (малахит).<br>
+              D горлышка: 5,5 см.<br>             
+              D дна: 2,7 см.<br>
+              Высота: 3 см.
+            </div>
+          </div>   
+        </div>     
+         
+        <div class="products__item" id="item10" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes11.jpg" title="Перейти на страницу товара" alt="Пиала &ldquo;Колотый лед&rdquo; (синяя), 40 мл"></a>
+          </div>
+          <div class="products__item-section">Чашки, кружки, пиалы</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Пиала &ldquo;Колотый лед&rdquo; (синяя),<br> 40 мл</a></div>
+          <div class="products__item-price">
+            <span>3.15</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Пиала из обливной керамики (синяя).<br>
+              D горлышка: 5,5 см.<br>             
+              D дна: 2,7 см.<br>
+              Высота: 3 см. 
+            </div>
+          </div>   
+        </div>
+        <div class="products__item" id="item11" >
+          <div class="products__item-picture">
+            <a href="products__product.html"><img src="images/product-dishes12.jpg" title="Перейти на страницу товара" alt="Пиала &ldquo;Колотый лед&rdquo; (лазурная), 40 мл"></a>
+          </div>
+          <div class="products__item-section">Чашки, кружки, пиалы</div>
+          <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Пиала &ldquo;Колотый лед&rdquo; (лазурная), 40 мл</a></div>
+          <div class="products__item-price">
+            <span>3.15</span> руб
+          </div>
+          <div class="item-quantity clearfix">
+            <button class="quantity-arrow-minus">-</button>
+            <div class="quantity-num"><span>1</span> шт</div>
+            <button class="quantity-arrow-plus">+</button>
+            <button class="quantity-add-to-basket">В корзину</button>
+          </div> 
+          <div class="products__item-description-wraper">
+            <div class="products__item-description">  
+              Пиала из обливной керамики (лазурная).<br>
+              D горлышка: 5,5 см.<br>             
+              D дна: 2,7 см.<br>
+              Высота: 3 см.      
+            </div>
+          </div>   
+        </div>
+      </div>   
+      <div class="pagination">     
+        <ul class="pagination__list">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>         
+        </ul>        
+      </div>      
+    </div>    
+    <div class="footer">    
+      <div class="footer__requisites">
+        <h3>Реквизиты</h3>
+        <p>
+          ЧТУП &ldquo;МирЧая&rdquo;. 220000, Республика Беларусь, г. Минск, просп. Дзержинского, д. 5, оф. 65.
+          Свидетельство о регистрации №1234567 от 12.03.2014 г.
+          Место регистрации &mdash; Администрация Октябрьского района г. Минска
+          УНП 12345678
+          Интернет-магазин world-of-tea.by внесён в торговый реестр Республики Беларусь 12 марта 2018 г. под номером: 123456
+        </p>
+        <p>&copy;Copyright 2018. Все права защищены.</p>
+      </div>
+      <div class="footer__work-time">
+        <h3>Режим работы</h3>
+        <p>
+        Обработка заказов с 9.00 до 18.00 без выходных. Доставка с 9.00 до 21.00 в будние дни.
+        </p>
+      </div> 
+      <div class="footer__folowing"> 
+        <h3>Следуйте за нами</h3>
+        <a href="#" title="Мы в Вконтакте"><i class="fab fa-vk fa-lg"></i></a>
+        <a href="#" title="Мы в Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" title="Мы в Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" title="Мы в Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+        <a href="#" title="Мы в Youtube"> <i class="fab fa-youtube"></i></a>
+      </div>       
+      <div class="footer__payments">
+        <h3>Способы оплаты</h3>
+        <span class="sprites footer__payment-method1"></span>
+        <span class="sprites footer__payment-method2"></span>
+        <span class="sprites footer__payment-method3"></span>
+        <span class="sprites footer__payment-method4"></span>
+        <span class="sprites footer__payment-method5"></span>
+      </div>      
+      <div class="phone-contacts">
+        <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+        </div>
+        <p class="phone-contacts__phone-number">123-44-55</p>
+      </div>  
+      <a href="#" class="to-top"><i class="fas fa-angle-up fa-4x"></i></a>
+    </div>     
+  </div>
+  <div class="login-modal-window-wrapper">
+    <div class="login-modal-window">
+      <button class="login-modal-window__close-button" onclick="offLoginModalWindow()">x</button>
+      <h2 class="login-modal-window__title">Авторизуйтесь</h2>   
+      <form class="login-form">
+        <div class="login-form__user-data">       
+          <input class="login-form__input login-form__login" id="user-name" type="text" name="user-name" placeholder="Логин" required>  
+          <input class="login-form__input login-form__password" id="user-password" type="password" name="user-password" placeholder="Пароль" required> 
+        </div>
+        <p class="login-form__help">
+          Забыли логин или пароль? <a href="#">Напомним!</a>
+        </p>
+        <button class="login-form__submit-button">
+          &rarr;
+        </button>
+      </form>    
+    </div>
+  </div>
+<script>
+  var menuItem1 = document.querySelector('.products-menu > li:nth-of-type(1)');  
+  var menuItem2 = document.querySelector('.products-menu > li:nth-of-type(2)');  
+  var menuItem3 = document.querySelector('.products-menu > li:nth-of-type(3)');   
+  document.querySelector('.products-menu > li:nth-of-type(1) > a').addEventListener("click", function() {  
+  if (menuItem2.classList.contains('products-sub-menu-open')) menuItem2.classList.remove('products-sub-menu-open');  
+  if (menuItem3.classList.contains('products-sub-menu-open')) menuItem3.classList.remove('products-sub-menu-open');   
+  menuItem1.classList.contains('products-sub-menu-open') ? menuItem1.classList.remove('products-sub-menu-open')
+                                                         : menuItem1.classList.add('products-sub-menu-open');   
+  }); 
+  document.querySelector('.products-menu > li:nth-of-type(2) > a').addEventListener("click", function() {  
+  if (menuItem1.classList.contains('products-sub-menu-open')) menuItem1.classList.remove('products-sub-menu-open'); 
+  if (menuItem3.classList.contains('products-sub-menu-open')) menuItem3.classList.remove('products-sub-menu-open');  
+  menuItem2.classList.contains('products-sub-menu-open') ? menuItem2.classList.remove('products-sub-menu-open')
+                                                         : menuItem2.classList.add('products-sub-menu-open'); 
+  }); 
+  document.querySelector('.products-menu > li:nth-of-type(3) > a').addEventListener("click", function() {  
+  if (menuItem1.classList.contains('products-sub-menu-open')) menuItem1.classList.remove('products-sub-menu-open');  
+  if (menuItem2.classList.contains('products-sub-menu-open')) menuItem2.classList.remove('products-sub-menu-open');   
+  menuItem3.classList.contains('products-sub-menu-open') ? menuItem3.classList.remove('products-sub-menu-open')
+                                                         :  menuItem3.classList.add('products-sub-menu-open');
+  });
+  function onOffSearchForm() {
+  var searchForm = document.querySelector('.search-form');
+  if(searchForm.style.display == "block") {
+    searchForm.style.display = "none";
+  } else {
+     searchForm.style.display = "block";
+  }    
+}
+  function onOffSearchForm2() {
+    var searchForm = document.querySelector('.search-form2');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+} 
+  var modalWindow;
+  var background;
+  function onLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'block';
+    background = document.querySelector('.main-container');
+    background.style.filter = "blur(10px)";
+  }  
+  function offLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'none';
+    background = document.querySelector('.main-container');
+    background.style.filter = "none";
+  } 
+  var menu;
+  var subMenu;
+  function onOffMenu() {      
+    menu = document.querySelector('.menu');
+    if(menu.classList.contains('menu-extra-size')) {
+      menu.classList.remove('menu-extra-size');
+    }
+    if(menu.classList.contains('menu-standart-size')) {
+      menu.classList.remove('menu-standart-size');
+    }
+    if(subMenu && subMenu.classList.contains('sub-menu-show')) {
+      subMenu.classList.remove('sub-menu-show');
+    }      
+    if(menu.classList.contains('menu-show')) {
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
+    } else if (menu.classList.contains('menu-hide')) {
+       menu.classList.remove('menu-hide');
+      menu.classList.add('menu-show');
+    } else {
+      menu.classList.add('menu-show');
+    }   
+  }
+  function onOffSubMenu() {
+    subMenu = document.querySelector('.menu__submenu');     
+    if(subMenu.classList.contains('sub-menu-show')) {        
+      subMenu.classList.remove('sub-menu-show');
+      subMenu.classList.add('sub-menu-hide');
+      if (menu) {
+        menu.classList.remove('menu-extra-size');
+        menu.classList.add('menu-standart-size');  
+      }    
+    } else if (subMenu.classList.contains('sub-menu-hide')) {
+      subMenu.classList.remove('sub-menu-hide');
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+        menu.classList.add('menu-extra-size');
+      menu.classList.remove('menu-standart-size');  
+      }      
+    } else {
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+      menu.classList.add('menu-extra-size');
+      }
+    }   
+  }
+</script>
+<script>
+  var items = document.querySelectorAll('.products__item');  
+  items.forEach(function(item, i) {
+    var btnMinus = document.querySelector('#item' + i + ' .quantity-arrow-minus');
+    var btnPlus = document.querySelector('#item' + i + ' .quantity-arrow-plus');
+    var currentItemCount = document.querySelector('#item' + i + ' .quantity-num span');
+    var currentPrice = document.querySelector('#item' + i + ' .products__item-price span');
+    var oldPrice = document.querySelector('#item' + i + ' .products__item-price span:nth-of-type(2) span');
+    var currentItemPrice = currentPrice.textContent;    
+    if(oldPrice) {
+    var oldItemPrice = oldPrice.textContent;
+    }           
+    btnPlus.onclick = function(e) {       
+        currentItemCount.textContent = +currentItemCount.textContent + 1;      
+        currentPrice.textContent = (+currentItemCount.textContent * currentItemPrice).toFixed(2);
+      if(oldPrice) {
+          oldPrice.textContent = (+currentItemCount.textContent * oldItemPrice).toFixed(2);
+        }       
+    }
+     btnMinus.onclick = function(e) {
+      if(currentItemCount.textContent > 1) {
+        currentItemCount.textContent = +currentItemCount.textContent - 1;      
+        currentPrice.textContent = (+currentItemCount.textContent * currentItemPrice).toFixed(2);
+      if(oldPrice) {
+          oldPrice.textContent = (+currentItemCount.textContent * oldItemPrice).toFixed(2);
+        }
+       }
+    }   
+  })
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+    jQuery(function($) {
+        var $navMenu = $('.menu');
+        var navMenuTop = $navMenu.offset().top;
+        var $toTop   = $('.to-top');
+        var body     = $('html, body');
+
+        $(window).scroll(function(){
+
+            if($(window).scrollTop()>navMenuTop){
+                $navMenu.addClass('fixed');
+            }
+            else if ($(window).scrollTop()<navMenuTop){
+                $navMenu.removeClass('fixed');
+            }
+            if($(window).scrollTop()>1000){
+                $toTop.fadeIn(800);
+            }
+            else if ($(window).scrollTop()<1000){
+                $toTop.hide();
+            }
+        });
+        $toTop.on('click', function(event) {
+            event.preventDefault();
+            body.animate({scrollTop:0}, 1200);
+        });     
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>World of Tea | Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+<!--owl-->
+  <link rel="stylesheet" href="styles/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl.theme.default.min.css">   
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">      
+      <div class="navigation-bar">
+        <div class="phone-contacts">
+          <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+          </div>
+          <p class="phone-contacts__phone-number">123-44-55</p>
+        </div>
+        <div class="logo-wrapper"><a href="index.html"><img src="images/logo.png" title="Перейти на главную сайта" class="logo"></a></div>
+        <div class="user-control-panel">
+          <a href="#" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i><span class="user-control-panel__counting-items">0</span></a>
+          <a href="#" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></a>
+          <a href="#" title="Поиск товаров" onclick="onOffSearchForm2()"><i class="fas fa-search fa-2x"></i></a>
+          <form class="search-form2">
+            <input type="search" class="search-input" required placeholder="Поиск">
+            <button type="submit" class="sumbit-search-button2"><i class="fas fa-check-square fa-lg"></i></button>
+          </form>
+        </div> 
+      </div> 
+      <ul class="menu">
+       <li><div class="icon-menu-bar-wrapper">        
+        <button class="icon-menu-bar" onclick="onOffSearchForm()" title="Поиск товаров"><i class="fas fa-search fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Войти в профиль" onclick="onLoginModalWindow()"><i class="fas fa-cogs fa-2x"></i></button>
+        <button class="icon-menu-bar" title="Перейти в корзину"><i class="fas fa-shopping-cart fa-2x"></i></button>
+        <button class="icon-menu-bar" onclick="onOffMenu()"><i class="fas fa-bars fa-2x"></i></button>
+        <form class="search-form">
+          <input type="search" class="search-input" required placeholder="Поиск">
+          <button type="submit" class="sumbit-search-button"><i class="fas fa-check-square fa-2x"></i></button>
+        </form>   
+      </div>
+       </li>
+        <li><a href="index.html" title="Перейти на главную сайта"><i class="fab fa-fort-awesome"></i>Главная</a></li>
+        <li onclick="onOffSubMenu()"><a><i class="fa fa-leaf"></i>Продукция<i class="fas fa-angle-down fa-sm"></i></a>
+          <ul class="menu__submenu">
+            <li><a href="products__tea.html" title="Перейти на страницу с продукцией">Чай</a></li>
+            <li><a href="products__dishes.html" title="Перейти на страницу с продукцией">Посуда</a></li>
+            <li><a href="products__tea-ceremony.html" title="Перейти на страницу с продукцией">Чайная церемония</a></li>
+          </ul>
+        </li>
+        <li><a href="about-tea.html" title="Перейти на страницу &ldquo;Все о чае&rdquo;"><i class="fas fa-coffee"></i>Всё о чае</a></li>
+        <li><a href="about-company.html" title="Перейти на страницу &ldquo;О компании&rdquo;"><i class="fas fa-address-card"></i>О компании</a></li>
+        <li><a href="contacts.html" title="Перейти на страницу контактов"><i class="fas fa-envelope"></i>Контакты</a></li>
+      </ul>     
+    </div>
+    <div class="main-slider">  
+      <div id="jssor_1" style="position:relative; margin:0 auto; top:0px; left:0px; width:1300px; height:500px; overflow:hidden; visibility:hidden;">
+          <!-- Loading Screen -->
+          <div data-u="loading" class="jssorl-009-spin" style="position:absolute; top:0px;  left:0px; width:100%; height:100%; text-align:center; background-color:rgba(0,0,0,0.7);">
+              <img src="images/spin.svg" style="margin-top:-19px; position:relative; top:50%;  width:38px; height:38px;">
+          </div>
+          <div data-u="slides" style="cursor:default; position:relative; top:0px;
+      left:0px; width:1300px; height:500px; overflow:hidden;">
+              <div data-p="225.00">
+                  <img data-u="image" src="images/slider-1.jpg" title="Ваше чаепитие будем незабываемым!" alt="Чайник с кружкой"> 
+              </div>
+              <div data-p="225.00">
+                  <img data-u="image" src="images/slider-2.jpg" title="С нами вы узнаете душу чай" alt="Ромашковый чай">
+              </div>
+              <div data-p="225.00">
+                  <img data-u="image" src="images/slider-3.jpg" title="Зарабатывай бонусы!" alt="Бонусы"> 
+              </div>
+              <div data-p="225.00">
+                  <img data-u="image" src="images/slider-4.jpg" title="Познакомьтесь с нашими чайничками" alt="Чайники"> 
+              </div>            
+              <div data-p="225.00">
+                  <img data-u="image" src="images/slider-5.jpg" title="Познакомьтесь с нашей весенней коллекцией" alt="Чайник"> 
+              </div>            
+          </div>
+          <!-- Bullet Navigator -->
+          <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+              <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                  </svg>
+              </div>
+          </div>
+          <!-- Arrow Navigator -->
+          <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+              </svg>
+          </div>
+          <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+              </svg>
+          </div>
+      </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->    
+    <div class="content">
+      <div class="quotation">
+        <div class="quotation__picture-wrapper">
+          <img src="images/leaf1.png" alt="" class="quotation__picture">
+        </div>
+        <p class="quotation__text">
+        Счастье в простых вещах. <br>
+        Тепло, покой в твоём сердце и 
+        чашечка хорошего китайского чая.
+        </p> 
+        <div class="quotation__picture-wrapper">
+          <img src="images/leaf2.png" alt="" class="quotation__picture">
+        </div>     
+      </div>        
+      <p>
+      Китайский чай пришел из глубины веков, окутанный притчами и легендами. Популярность китайского чая растет постоянно, философия этого чая совместно с огромным разнообразием сортов и массой полезных свойств привлекает к нему всё больше внимания. Эфирные масла, витамины, антиоксиданты и минеральные вещества, содержащиеся в зелёном чае, оказывают благотворное действие на весь организм, позволяют контролировать вес и уровень сахара в крови.
+      </p>
+      <div class="clearfix">         
+        <div class="about-tea-columns">
+          <img src="images/about-tea1.png" class="about-tea-column__picture"> 
+          <p>            
+            Приготовление китайского чая требует определенных навыков и знаний. Они несложны и понятны, но взамен получаешь несоизмеримое с затратами своего внимания и времени наслаждение этим великолепным напитком.
+          </p>  
+        </div>    
+        <div class="about-tea-columns">
+          <img src="images/about-tea2.png" class="about-tea-column__picture">
+          <p>          
+           Зелёный чай экономичен &mdash; многие сорта китайского чая можно заваривать несколько раз. Вкус чая не только не ухудшается, но и начинает раскрываться с каждой последующей заваркой.
+          </p>
+        </div>
+        <div class="about-tea-columns">
+        <img src="images/about-tea3.png" class="about-tea-column__picture">
+         <p>          
+           World of Tea поможет вникнуть в особенности каждого сорта китайского чая, научит правильно заваривать и получать полную гамму удовольствия и полезных свойств от этого напитка. 
+           World of Tea &mdash; интернет-магазин китайского чая в Минске.
+        </p>
+        </div>
+      </div>
+      <hr>
+      <div class="price-formation">
+        <h2 class="price-formation__header">Гибкие условия</h2>
+        <h3 class="price-formation__condition-header">Цены формируются в зависимости от:</h3>
+        <div class="price-formation__conditions clearfix">
+          <div class="price-formation__condition"> 
+            <img src="images/condition1.png" alt="">         
+            Объема заказа
+          </div>
+          <div class="price-formation__condition">
+            <img src="images/condition2.png" alt="">
+            Частоты исходящих <br> заявок на продукцию          
+          </div>         
+          <div class="price-formation__condition">
+            <img src="images/condition3.png" alt="">
+            Срока сотрудничества          
+          </div>
+        </div>        
+        <p class="price-formation__info">
+          Постоянные и крупные заказчики могут получить дополнительную скидку. 
+          Наши менеджеры в телефонном режиме предоставят информацию о текущих акциях и спецпредложениях.
+        </p>
+      </div>
+      <hr>
+      <div class="logistics clearfix">
+        <h2 class="logistics__header">Схема работы</h2>        
+          <div class="logistics__step">
+            <img src="images/logistics1.png" alt="">
+            Свяжитесь с нами
+          </div>
+          <div class="logistics__step">
+            <img src="images/logistics2.png" alt="">
+            Оформите заказ
+          </div>
+          <div class="logistics__step">
+            <img src="images/logistics3.png" alt="">
+            Получите товар удобным способом
+          </div>
+          <div class="logistics__step">
+            <img src="images/logistics4.png" alt="">
+            Произведите оплату
+          </div> 
+      </div>
+      <hr>
+      <div class="articles clearfix">
+        <h2 class="articles__header">Статьи</h2>
+        <div class="articles__article">
+          <img src="images/article1.jpg" alt="Черный чай" title="Черный чай">
+          <div class="arcitles__article-content-wrapper">
+            <h2 class="article__title">
+              Черный чай, выращенный в Индии и на Цейлоне. Сравнение
+            </h2>
+            <p class="article__content">
+              Сегодня сложно представить себе человека, который хотя бы раз в жизни не пробовал черный чай. Этот напиток в некоторых странах даже является частью традиционного жизненного уклада...
+            </p>
+            <span class="article__date">
+              22.05.2018
+            </span>
+            <a href="#" class="continue-reading" title="Перейти на новостную страницу">Подробнее</a>
+          </div>
+        </div> 
+        <div class="articles__article">
+          <img src="images/article2.jpg" alt="Иван-чай" title="Иван-чай">
+          <div class="arcitles__article-content-wrapper">
+            <h2 class="article__title">	
+              Иван-чай: особенности, свойства
+            </h2>
+            <p class="article__content">
+              На Руси уже несколько столетий активно употребляют отвар из травы кипрея. Сегодня она более известна, как Иван-чай...
+            </p>
+            <span class="article__date">
+              21.05.2018
+            </span>
+            <a href="#" class="continue-reading" title="Перейти на новостную страницу">Подробнее</a>
+            </div>
+        </div>        
+      </div>
+      <hr>
+      <div class="sale-slider-wrapper">
+        <h2 class="sale-slider__header">Акции</h2>      
+        <!--  Demos --> 
+      <div class="row" id="demos">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="discount-item-weight discount-frame" id="item-weight0">  
+                <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea1.jpg" title="Перейти на страницу товара" alt="Лун Цзин (Колодец Дракона)"></a>
+                </div>
+                <div class="products__item-section">Зеленый чай</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Лун Цзин (Колодец Дракона)</a></div>
+                <div class="products__item-price">
+                  <span>18.63</span> руб <span class="item-old-price"><span>20.7</span> руб</span>
+                </div>
+                <div class="products__item-quantity discountclearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>50</span> г</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div>          
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-weight discount-frame" id="item-weight1">  
+                 <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea12.jpg" title="Перейти на страницу товара" alt="Японский чай Матча"></a>
+                </div>
+                <div class="products__item-section">Зеленый чай</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Японский чай Матча</a></div>
+                <div class="products__item-price">  
+                  <span>15.21</span> руб <span class="item-old-price"><span>16.90</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>50</span> г</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div>                 
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-weight discount-frame" id="item-weight2">  
+               <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea4.jpg" title="Перейти на страницу товара" alt="Малебрук &ldquo;Черный янтарь&rdquo;"></a>
+                </div>
+                <div class="products__item-section">Черный чай</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Малебрук &ldquo;Черный янтарь&rdquo;</a></div>
+                <div class="products__item-price">  
+                  <span>11.25</span> руб <span class="item-old-price"><span>12.50</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>50</span> г</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div>     
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-weight discount-frame" id="item-weight3">  
+               <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea7.jpg" title="Перейти на страницу товара" alt="Е-Шен (Дикий зеленый пуэр)"></a>
+                </div>
+                <div class="products__item-section">Чай Пуэр</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Е-Шен (Дикий зеленый пуэр)</a></div>
+                <div class="products__item-price"> 
+                  <span>12.69</span> руб <span class="item-old-price"><span>14.10</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>50</span> г</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-count discount-frame" id="item-count0">  
+                <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-dishes2.jpg" title="Перейти на страницу товара" alt="&ldquo;Георгин&rdquo;, 670 мл"></a>
+                </div>
+                <div class="products__item-section">Стеклянные чайники</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Георгин&rdquo;, 670 мл</a></div>
+               <div class="products__item-price">
+                  <span>56.34</span> руб <span class="item-old-price"><span>62.60</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-count discount-frame" id="item-count1">  
+                 <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-dishes6.jpg" title="Перейти на страницу товара" alt="&ldquo;Поющий лес&rdquo;, 350 мл"></a>
+                </div>
+                <div class="products__item-section">Глиняные чайники</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">&ldquo;Поющий лес&rdquo;, 350 мл</a></div>
+                <div class="products__item-price">  
+                  <span>33.57</span> руб <span class="item-old-price"><span>37.30</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-count discount-frame" id="item-count2">  
+                 <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-dishes10.jpg" title="Перейти на страницу товара" alt="Пиала &ldquo;Колотый лед&rdquo; (малахит), 55 мл"></a>
+                </div>
+                <div class="products__item-section">Чашки, кружки, пиалы</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Пиала &ldquo;Колотый лед&rdquo; (малахит),<br> 55 мл</a></div>
+                <div class="products__item-price"> 
+                  <span>2.79</span> руб <span class="item-old-price"><span>3.10</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="discount-item-count discount-frame" id="item-count3">  
+                 <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea-ceremony1.jpg" title="Перейти на страницу товара" alt="Подставка для Пуэра (пластик)"></a>
+                </div>
+                <div class="products__item-section">Аксессуары</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Подставка для Пуэра (пластик)</a></div>
+                <div class="products__item-price">
+                   <span>9.27</span> руб <span class="item-old-price"><span>10.30</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>           
+            <div class="item">
+               <div class="discount-item-count discount-frame" id="item-count4">  
+                 <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea-ceremony4.jpg" title="Перейти на страницу товара" alt="Чайный поднос (Чабань) из бамбука"></a>
+                </div>
+                <div class="products__item-section">Чабань (чайные доски)</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Чайный поднос (Чабань) из бамбука 47х31х6,5 см</a></div>
+                <div class="products__item-price">           
+                  <span>148.50</span> руб <span class="item-old-price"><span>165.00</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+                  <div class="discount-item-count discount-frame" id="item-count5">  
+                <div class="products__item-picture">
+                  <a href="products__product.html"><img class="discount-item-picture" src="images/product-tea-ceremony10.jpg" title="Перейти на страницу товара" alt="Глиняная Игрушка для чайной церемонии &ldquo;Хоттей с Мешком&rdquo;"></a>
+                </div>
+                <div class="products__item-section">Чайные фигурки</div>
+                <div><a href="products__product.html" class="products__item-name" title="Перейти на страницу товара">Глиняная Игрушка для чайной церемонии &ldquo;Хоттей с Мешком&rdquo;</a></div>
+                <div class="products__item-price"> 
+                  <span>28.71</span> руб <span class="item-old-price"><span>31.90</span> руб</span>
+                </div>
+                <div class="products__item-quantity clearfix">
+                  <button class="quantity-arrow-minus">-</button>
+                  <div class="quantity-num"><span>1</span> шт</div>
+                  <button class="quantity-arrow-plus">+</button>
+                  <button class="quantity-add-to-basket discount-add-to-basket">В корзину</button>
+                </div> 
+              </div>
+            </div>            
+          </div>  
+        </div>
+      </div> 
+    </div>               
+    </div>    
+    <div class="footer">    
+      <div class="footer__requisites">
+        <h3>Реквизиты</h3>
+        <p>
+          ЧТУП &ldquo;МирЧая&rdquo;. 220000, Республика Беларусь, г. Минск, просп. Дзержинского, д. 5, оф. 65.
+          Свидетельство о регистрации №1234567 от 12.03.2014 г.
+          Место регистрации &mdash; Администрация Октябрьского района г. Минска
+          УНП 12345678
+          Интернет-магазин world-of-tea.by внесён в торговый реестр Республики Беларусь 12 марта 2018 г. под номером: 123456
+        </p>
+        <p>&copy;Copyright 2018. Все права защищены.</p>
+      </div>
+      <div class="footer__work-time">
+        <h3>Режим работы</h3>
+        <p>
+        Обработка заказов с 9.00 до 18.00 без выходных. Доставка с 9.00 до 21.00 в будние дни.
+        </p>
+      </div> 
+      <div class="footer__folowing"> 
+        <h3>Следуйте за нами</h3>  
+        <a href="#" title="Мы в Вконтакте"><i class="fab fa-vk fa-lg"></i></a>
+        <a href="#" title="Мы в Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" title="Мы в Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" title="Мы в Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+        <a href="#" title="Мы в Youtube"> <i class="fab fa-youtube"></i></a>
+      </div>       
+      <div class="footer__payments">
+        <h3>Способы оплаты</h3>
+        <span class="sprites footer__payment-method1"></span>
+        <span class="sprites footer__payment-method2"></span>
+        <span class="sprites footer__payment-method3"></span>
+        <span class="sprites footer__payment-method4"></span>
+        <span class="sprites footer__payment-method5"></span>
+      </div>      
+      <div class="phone-contacts">
+        <div class="phone-contacts__phone-operators-wrapper">
+          <span class="sprites phone-contacts__phone-operator1"></span>
+          <span class="sprites phone-contacts__phone-operator2"></span>
+          <span class="sprites phone-contacts__phone-operator3"></span>
+        </div>
+        <p class="phone-contacts__phone-number">123-44-55</p>
+      </div>  
+      <a href="#" class="to-top"><i class="fas fa-angle-up fa-4x"></i></a>
+    </div>     
+  </div>
+  <div class="login-modal-window-wrapper">
+    <div class="login-modal-window">
+      <button class="login-modal-window__close-button" onclick="offLoginModalWindow()">x</button>
+      <h2 class="login-modal-window__title">Авторизуйтесь</h2>   
+      <form class="login-form">
+        <div class="login-form__user-data">       
+          <input class="login-form__input login-form__login" id="user-name" type="text" name="user-name" placeholder="Логин" required>  
+          <input class="login-form__input login-form__password" id="user-password" type="password" name="user-password" placeholder="Пароль" required> 
+        </div>
+        <p class="login-form__help">
+          Забыли логин или пароль? <a href="#">Напомним!</a>
+        </p>
+        <button class="login-form__submit-button">
+          &rarr;
+        </button>
+      </form>    
+    </div>
+  </div>
+<script>
+  function onOffSearchForm() {
+    var searchForm = document.querySelector('.search-form');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  }
+  function onOffSearchForm2() {
+    var searchForm = document.querySelector('.search-form2');
+    if(searchForm.style.display == "block") {
+      searchForm.style.display = "none";
+    } else {
+       searchForm.style.display = "block";
+    }    
+  } 
+  var modalWindow;
+  var background;
+  function onLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'block';
+    background = document.querySelector('.main-container');
+    background.style.filter = "blur(10px)";
+  }  
+  function offLoginModalWindow() {
+    modalWindow = document.querySelector('.login-modal-window-wrapper');
+    modalWindow.style.display = 'none';
+    background = document.querySelector('.main-container');
+    background.style.filter = "none";
+  } 
+  var menu;
+  var subMenu;
+  function onOffMenu() {      
+    menu = document.querySelector('.menu');
+    if(menu.classList.contains('menu-extra-size')) {
+      menu.classList.remove('menu-extra-size');
+    }
+    if(menu.classList.contains('menu-standart-size')) {
+      menu.classList.remove('menu-standart-size');
+    }
+    if(subMenu && subMenu.classList.contains('sub-menu-show')) {
+      subMenu.classList.remove('sub-menu-show');
+    }      
+    if(menu.classList.contains('menu-show')) {
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
+    } else if (menu.classList.contains('menu-hide')) {
+       menu.classList.remove('menu-hide');
+      menu.classList.add('menu-show');
+    } else {
+      menu.classList.add('menu-show');
+    }   
+  }
+  function onOffSubMenu() {
+    subMenu = document.querySelector('.menu__submenu');     
+    if(subMenu.classList.contains('sub-menu-show')) {        
+      subMenu.classList.remove('sub-menu-show');
+      subMenu.classList.add('sub-menu-hide');
+      if (menu) {
+        menu.classList.remove('menu-extra-size');
+        menu.classList.add('menu-standart-size');  
+      }    
+    } else if (subMenu.classList.contains('sub-menu-hide')) {
+      subMenu.classList.remove('sub-menu-hide');
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+        menu.classList.add('menu-extra-size');
+      menu.classList.remove('menu-standart-size');  
+      }      
+    } else {
+      subMenu.classList.add('sub-menu-show');
+      if(menu) {
+      menu.classList.add('menu-extra-size');
+      }
+    }   
+  }
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>  
+<script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var jssor_1_SlideoTransitions = [
+          [{b:-1,d:1,o:-0.7}],
+          [{b:900,d:2000,x:-379,e:{x:7}}],
+          [{b:900,d:2000,x:-379,e:{x:7}}],
+          [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+        ];
+
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $CaptionSliderOptions: {
+            $Class: $JssorCaptionSlideo$,
+            $Transitions: jssor_1_SlideoTransitions
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 3000;
+
+        function ScaleSlider() {
+            var containerElement = jssor_1_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_1_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+
+        ScaleSlider();
+
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+    });
+</script>
+<script>
+  var items = document.querySelectorAll('.discount-item-weight');  
+  items.forEach(function(item, i) {
+    var btnMinus = document.querySelector('#item-weight' + i + ' .quantity-arrow-minus');
+    var btnPlus = document.querySelector('#item-weight' + i + ' .quantity-arrow-plus');
+    var currentWeight = document.querySelector('#item-weight' + i + ' .quantity-num span');
+    var currentPrice = document.querySelector('#item-weight' + i + ' .products__item-price span');
+    var oldPrice = document.querySelector('#item-weight' + i + ' .products__item-price span:nth-of-type(2) span');
+    var pricePerGram = currentPrice.textContent / 50;    
+    if(oldPrice) {
+    var oldPricePerGram = oldPrice.textContent / 50;
+    }      
+
+    btnPlus.onclick = function(e) {
+      currentWeight.textContent = +currentWeight.textContent + 50;
+      currentPrice.textContent = (+currentWeight.textContent * pricePerGram).toFixed(2);
+      if(oldPrice) {
+        oldPrice.textContent = (+currentWeight.textContent * oldPricePerGram).toFixed(2);
+      }
+    }
+     btnMinus.onclick = function(e) {
+      if(currentWeight.textContent > 50) {
+        currentWeight.textContent = +currentWeight.textContent - 50;      
+        currentPrice.textContent = (+currentWeight.textContent * pricePerGram).toFixed(2);
+        if(oldPrice) {
+          oldPrice.textContent = (+currentWeight.textContent * oldPricePerGram).toFixed(2);
+        }
+       }
+    }   
+  })
+</script> 
+<script>
+  var items = document.querySelectorAll('.discount-item-count');  
+  items.forEach(function(item, i) {
+    var btnMinus = document.querySelector('#item-count' + i + ' .quantity-arrow-minus');
+    var btnPlus = document.querySelector('#item-count' + i + ' .quantity-arrow-plus');
+    var currentItemCount = document.querySelector('#item-count' + i + ' .quantity-num span');
+    var currentPrice = document.querySelector('#item-count' + i + ' .products__item-price span');
+    var oldPrice = document.querySelector('#item-count' + i + ' .products__item-price span:nth-of-type(2) span');
+    var currentItemPrice = currentPrice.textContent;    
+    if(oldPrice) {
+    var oldItemPrice = oldPrice.textContent;
+    }           
+    btnPlus.onclick = function(e) {       
+        currentItemCount.textContent = +currentItemCount.textContent + 1;      
+        currentPrice.textContent = (+currentItemCount.textContent * currentItemPrice).toFixed(2);
+      if(oldPrice) {
+          oldPrice.textContent = (+currentItemCount.textContent * oldItemPrice).toFixed(2);
+        }       
+    }
+     btnMinus.onclick = function(e) {
+      if(currentItemCount.textContent > 1) {
+        currentItemCount.textContent = +currentItemCount.textContent - 1;      
+        currentPrice.textContent = (+currentItemCount.textContent * currentItemPrice).toFixed(2);
+      if(oldPrice) {
+          oldPrice.textContent = (+currentItemCount.textContent * oldItemPrice).toFixed(2);
+        }
+       }
+    }   
+  })
+</script> 	
+<script>
+    jQuery(function($) {
+        var $navMenu = $('.menu');
+        var navMenuTop = $navMenu.offset().top;
+        var $toTop   = $('.to-top');
+        var body     = $('html, body');
+
+        $(window).scroll(function(){
+
+            if($(window).scrollTop()>navMenuTop){
+                $navMenu.addClass('fixed');
+            }
+            else if ($(window).scrollTop()<navMenuTop){
+                $navMenu.removeClass('fixed');
+            }
+            if($(window).scrollTop()>1000){
+                $toTop.fadeIn(800);
+            }
+            else if ($(window).scrollTop()<1000){
+                $toTop.hide();
+            }
+        });
+        $toTop.on('click', function(event) {
+            event.preventDefault();
+            body.animate({scrollTop:0}, 1200);
+        });     
+    });
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script> 
+<script>
+  $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop: false,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        730: {
+          items: 2,         
+          loop: false
+        },
+        1040: {
+          items: 3,
+          nav: false,          
+          margin: 20
+        }
+      }
+    })
+  })
+</script> 
+<script>
+  function loggingDOM() {
+    let level = 0;
+    function postDOM(el) {
+        if (el.nodeType === 1) {
+            console.log(`${makeTabulation(level)}<${el.tagName.toLowerCase()}>`);
+        }
+        if (el.childNodes) {
+            let nodes = el.childNodes;
+            for (let i = 0; i < nodes.length; i++) {
+                level++;
+                postDOM(nodes[i]);
+            }
+        }
+        level--;
+    }
+    function makeTabulation(level) {
+        let tab = '';
+        function tabulation() {
+            for (let i = 0; i < level; i++) {
+                tab += '  ';
+            }
+            return tab;
+        }
+        return tabulation();
+    }
+    postDOM(document.childNodes[1]);
+}
+loggingDOM();
+</script>
+</body>
+</html>
+<!--<i class="fas fa-bars fa-2x"></i>-->
